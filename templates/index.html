@@ -34,7 +34,8 @@
         if (init.success) {
         // use Surfly API here
         // we use the default Surfly button
-          Surfly.button();
+        // disable the video chat and change the icon colors in the chatbox
+          Surfly.button({chat_box_color: "#87cefa", videochat: false});
         }
       });
     });
